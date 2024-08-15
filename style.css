@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+li
+{
+    list-style-type: none;
+}
+html, body
+{
+    width: 100%;
+    height: 100%;
+    background: #272727;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Way-Helper {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background: #323232;
+    position: relative;
+}
+.wrapper__Way-helper {
+    min-width: 300px;
+    max-width: 700px;
+    margin: 10px;
+    width: 100%;
+    height: 500px;
+}
+.timer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Way-Helper__timer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #323232;
+    z-index: 2;
+}
+.way-info
+{
+    color: #d0d0d0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.timetable
+{
+
+}
+.Way-Helper__timetable
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #323232;
+}
+
+/* addition stylizing classes */
+.marked
+{
+    color: #f39494;
+    text-transform: uppercase;
+}
+
+/* IDs */
+#switch-btn
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    z-index: 10;
+    cursor: pointer;
+}
+#main-timer
+{
+    font-size: 64px;
+    color: #d0d0d0;
+    text-align: center;
+}
+
+#progress-bar
+{
+    width: 90%;
+    height: 25px;
+    background: #d0d0d0;
+    border-radius: 10px;
+}
+#progress-bar-line
+{
+    background: #a951c2;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d0d0d0;
+}
+#stations-list
+{
+    color: #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    height: 100%;
+}
