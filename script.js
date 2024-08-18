@@ -141,7 +141,9 @@ function updateTimetable(way)
 
             let date = new Date(station.date); 
             const [hours, minutes, seconds] = getConstantHoursMinutesSeconds(date);
-            timeString = `<span>${getTimeString(hours, minutes, seconds)} (${station.stopTime} мин)</span>`
+            let stopTime = new String(station.stopTime);
+            stopTime.length > 1 ? stopTime = `<span class="marked">${station.stopTime}</span>` : stopTime = station.stopTime;
+            timeString = `<span>${getTimeString(hours, minutes, seconds)} (${stopTime} мин)</span>`
             stationDiv.innerHTML = `${station.name} --- ${timeString}`;
             stationsList.appendChild(stationDiv);
         }

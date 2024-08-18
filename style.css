@@ -71,6 +71,8 @@ html, body
     height: 100%;
     position: absolute;
     background: #323232;
+    box-sizing: border-box;
+    padding: 35px 0;
 }
 
 /* addition stylizing classes */
@@ -128,7 +130,6 @@ html, body
     overflow-y: scroll;
     height: 100%;
     box-sizing: border-box;
-    padding: 35px 0px;
 }
 #train-status
 {
