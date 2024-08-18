@@ -124,7 +124,7 @@ function updateUI(way, now, timeLeft, progress)
     {
         const timeDifference = previousStation.departure - now;
         const [hours, minutes, seconds] = getHoursMinutesSeconds(timeDifference);
-        trainStatusDiv.textContent = `Поезд стоит (${previousStation.name}). Осталось ${getTimeString(hours, minutes, seconds)} мин.`;
+        trainStatusDiv.innerHTML = `Поезд стоит (${previousStation.name}). Осталось <span class="marked">${getTimeString(hours, minutes, seconds)}</span> мин.`;
     }
 }
 

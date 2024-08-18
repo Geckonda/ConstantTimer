@@ -127,4 +127,11 @@ html, body
     align-items: center;
     overflow-y: scroll;
     height: 100%;
+    box-sizing: border-box;
+    padding: 35px 0px;
+}
+#train-status
+{
+    text-align: center;
+    padding: 0px 10px;
 }
